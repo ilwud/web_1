@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+.chart-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.crypto-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.crypto-list li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+}
