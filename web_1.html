@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Web Crypto</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <h1>Data Cryptocurrency</h1>
+    <div id="crypto-data"></div>
+    <script>
+        fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ripple&vs_currencies=usd')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('crypto-data').innerHTML = `
+                    <p>Bitcoin (BTC): $${data.bitcoin.usd}</p>
+                    <p>Ripple (XRP): $${data.ripple.usd}</p>
+                `;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
